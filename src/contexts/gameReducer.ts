@@ -106,12 +106,7 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         lastWinInfo: undefined,
       };
     }
-    case 'SET_GAME_STATUS': {
-      return {
-        ...state,
-        gameStatus: action.status,
-      };
-    }
+
     default:
       return state;
   }
